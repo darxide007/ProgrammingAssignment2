@@ -1,3 +1,4 @@
+
 ## Put comments here that give an overall description of what your
 ## functions do
 
@@ -14,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
     get <- function() x
   
     # Cache matrix inverse = m
-    setMatInverse <- function(MatInv) m <<- Inv
+    setMatInverse <- function(MatInv) m <<- MatInv
     
     # Retrieve matrix inverse m
     getMatInverse <- function() m
@@ -45,4 +46,3 @@ cacheSolve <- function(x, ...) {
     x$setMatInverse(m)
     m
 }
-
